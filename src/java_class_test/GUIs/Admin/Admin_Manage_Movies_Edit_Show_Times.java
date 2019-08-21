@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 
-public class Admin_Manage_Movies_Edit_Show_Times {
+public class Admin_Manage_Movies_Edit_Show_Times{
 
     static JPanel content = new JPanel();
     static JFrame window  = new JFrame();
@@ -77,6 +77,11 @@ public class Admin_Manage_Movies_Edit_Show_Times {
         window.setLocation(450 , 300);
         window.setVisible(true);
         window.setLocationRelativeTo(null);
+    }
+
+    public void getShowTimeData()
+    {
+
     }
 
     public static class ButtonHandler implements ActionListener{
