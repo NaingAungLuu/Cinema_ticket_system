@@ -1,6 +1,7 @@
 package java_class_test.Controllers;
 
 import com.mysql.cj.protocol.Resultset;
+import java_class_test.DataObjects.Movie;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -108,5 +109,16 @@ public class DataManager {
     }
 
 
-
+    public static void addMovie(Movie movie) {
+        String sql = "INSERT INTO `cinema`.`tblMovie` (`movieName`, `categoryID`, `theatreNo`, `movieType`) VALUES ('"
+                    + movie.getMovieName() + "' , '" + movie.getCategory() + "' , '" + movie.getTheatreNo()
+                    + "' , '" + movie.getMovieType() + "')";
+        try
+        {
+            executeQuery(sql , false);
+        }catch (Exception e)
+        {
+            System.out.println(e);
+        }
+    }
 }

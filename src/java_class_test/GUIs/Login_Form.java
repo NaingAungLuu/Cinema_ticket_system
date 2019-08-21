@@ -33,7 +33,7 @@ public class Login_Form extends JPanel{
 	}
 
 
-	public Login_Form()
+	public Login_Form()  
 	{
 		//Constructor for Labels
 				//Cinema n	me label
@@ -76,6 +76,7 @@ public class Login_Form extends JPanel{
 						super.keyPressed(e);
 						if(e.getKeyCode() == KeyEvent.VK_ENTER)
 						{
+							System.out.println("Attempting Login from password field");
 							try {
 								UserInteractions.Login(txtUsername.getText() , String.valueOf(txtPassword.getPassword()));
 							} catch (Exception e1) {
@@ -96,18 +97,17 @@ public class Login_Form extends JPanel{
 				btnLogin.setContentAreaFilled(false);
 				btnLogin.setBorder(new LineBorder(Color.decode("#242B40") , 2));
 				btnLogin.setOpaque(true);
-				btnLogin.addActionListener(new ActionListener() {
-					@Override
-					public void actionPerformed(ActionEvent e) {
-						try {
-							UserInteractions.Login(txtUsername.getText() , String.valueOf(txtPassword.getPassword()));
-						} catch (Exception e1) {
-							e1.printStackTrace();
-						}
+				btnLogin.addActionListener(e -> {
+					try {
+						UserInteractions.Login(txtUsername.getText() , String.valueOf(txtPassword.getPassword()));
+						System.out.println("Attempting login");
+					} catch (Exception e1) {
+						e1.printStackTrace();
 					}
+
 				});
 
-		//btnLogin.setBounds((window.getWidth()/2)-(btnLogin.getWidth()/2) , 270 , 180 , 45);
+				//btnLogin.setBounds((window.getWidth()/2)-(btnLogin.getWidth()/2) , 270 , 180 , 45);
 
 				//Constructor for Panel("CONTENT")
 				setLayout(null);
@@ -120,16 +120,7 @@ public class Login_Form extends JPanel{
 				add(lblCinemaname);
 				add(lblCinemaname1);
 
-				
-				//Constructor for JFrame
 
-//				window.setContentPane(content);
-//				window.setSize(500 , 400);
-//				window.setLocation(450 , 300);
-//				window.setVisible(true);
-//				window.setLocationRelativeTo(null);
-//				window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-//				//window.setBackground(Color.decode("#303f9f"));
 
 
 	}

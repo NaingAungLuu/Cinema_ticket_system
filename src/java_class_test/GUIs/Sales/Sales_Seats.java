@@ -264,6 +264,8 @@ public class Sales_Seats extends JPanel{
                 btnCheckOut.setBackground(Color.decode("#FF6767"));
                 btnCheckOut.setForeground(Color.white);
             }
+
+
         });
 
 
@@ -302,6 +304,7 @@ public class Sales_Seats extends JPanel{
                 Sales_Seats.window.dispose();
                 Login_Form frmLogin = new Login_Form();
             }
+
             //else if(e.getSource() == btnManageSeatPlan)
         }
     }

@@ -241,7 +241,7 @@ public class Admin_Manage_Users extends JPanel{
                     System.out.println("Successfully Added");
                     DataManager.refreshUserData(model);
                 }
-                catch (Exception error){System.out.println(error);}
+                catch (Exception error){ System.out.println("btnAdd " +error);}
             }
         });
 

@@ -1,6 +1,7 @@
 package java_class_test.Controllers;
 
 import com.sun.tools.javac.Main;
+import java_class_test.DataObjects.Movie;
 import java_class_test.GUIs.Admin.Admin_Manage_Users;
 import java_class_test.GUIs.Login_Form;
 import jdk.jfr.DataAmount;
@@ -32,6 +33,7 @@ public class UserInteractions{
         String[] userInfo ;
 
         try{
+            System.out.println("Attemptin Login");
             userInfo = DataManager.getLoginInfo(enteredusername);
             username = userInfo[0];
             password = userInfo[1];
@@ -125,4 +127,11 @@ public class UserInteractions{
         return showTimes.toArray(new String[0]);
 
     }
+
+    public void addMovie(String movieName , int categoryID , int theatreNo, String movieType,String showTime)
+    {
+        Movie movie = new Movie(movieName, categoryID , theatreNo , movieType , showTime);
+        DataManager.addMovie(movie);
+    }
+
 }
