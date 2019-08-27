@@ -1,11 +1,7 @@
 <component name="libraryTable">
   <library name="material-ui-swing-master">
-    <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/material-ui-swing-master" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
-    <SOURCES>
-      <root url="file://$USER_HOME$/Downloads/material-ui-swing-master/src/main/java" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

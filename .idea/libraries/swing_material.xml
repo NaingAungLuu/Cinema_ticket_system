@@ -2,8 +2,6 @@
   <library name="swing_material">
     <CLASSES />
     <JAVADOC />
-    <SOURCES>
-      <root url="file://$USER_HOME$/Downloads/swing-material-master/src/main/java" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c8e7b4e-2464-42a2-93f7-886e9a6bc461" name="Default Changelist" comment="" />
+    <list default="true" id="5c8e7b4e-2464-42a2-93f7-886e9a6bc461" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Cinema_ticket_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Cinema_ticket_system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/material_ui_swing_master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/material_ui_swing_master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/swing_material.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/swing_material.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/Controllers/DataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/Controllers/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/Controllers/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/Controllers/UserInteractions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/DataObjects/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Movies_Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Movies_Edit_Show_Times.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit_Show_Times.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Movies_Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Seat_Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Seat_Plan_Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan_Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Menu_Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Menu_Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Login_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Login_Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Sales/Sales_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Sales/Sales_Menu_Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Menu_Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Sales/Sales_Seats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Seats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_class_test/GUIs/Sales/Sales_Tickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Tickets.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +42,124 @@
       <FILTER>java_class_test.*</FILTER>
     </SUITE>
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1803">
+              <caret line="177" column="49" selection-start-line="177" selection-start-column="49" selection-end-line="177" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Menu_Fragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="101" column="42" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Seats.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1482">
+              <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Software files/Jdk Files/src.zip!/java/sql/DriverManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3477">
+              <caret line="214" selection-start-line="214" selection-end-line="214" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/MainClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="167" column="29" lean-forward="true" selection-start-line="165" selection-start-column="70" selection-end-line="167" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Fragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="162" column="20" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan_Fragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -28,8 +171,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>checkout</find>
-      <find>content</find>
       <find>buttonHandler</find>
       <find>window.</find>
       <find>pnlframe</find>
@@ -58,6 +199,8 @@
       <find>btnShowTimes</find>
       <find>cbocate</find>
       <find>moviename</find>
+      <find>new Font(&quot;Arial&quot;,</find>
+      <find>new Font(&quot;Courier&quot;,</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -69,24 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/java_class_test/manageuser.form" />
-        <option value="$PROJECT_DIR$/src/java_class_test/userseat.java" />
-        <option value="$PROJECT_DIR$/bin/java_class_test/Sales_Main.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin_Manage_Movies_Edit.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin_Manage_Movies_Edit_Show_Times.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin_Manage_Seat_Plan.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin_Manage_Seat_Plan_Fragment.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin_Manage_Movies_Fragment.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin_Menu_Fragment.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Sales_Main.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin_Manage_Movies.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin_Home.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Sales_Seats.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Sales_Tickets.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin_Manage_Users.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Sales/Sales_Main.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin/Admin_Manage_Movies_Fragment.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/delegates/Delegate.java" />
         <option value="$PROJECT_DIR$/src/java_class_test/delegates/GUDelegate.java" />
         <option value="$PROJECT_DIR$/src/java_class_test/GUIHandler.java" />
         <option value="$PROJECT_DIR$/src/java_class_test/Sales/Sales_Menu_Fragment.java" />
@@ -119,24 +244,136 @@
         <option value="$PROJECT_DIR$/src/java_class_test/DataObjects/Movie.java" />
         <option value="$PROJECT_DIR$/src/java_class_test/Controllers/DataManager.java" />
         <option value="$PROJECT_DIR$/src/java_class_test/Controllers/UserInteractions.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Movie.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Home.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit_Show_Times.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Main.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Menu_Fragment.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Login_Form.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Tickets.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Fragment.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Seats.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan_Fragment.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Menu_Fragment.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-30" />
-    <option name="y" value="290" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Cinema_ticket_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Cinema_ticket_system" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Cinema_ticket_system" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Cinema_ticket_system" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cinema_ticket_system" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Cinema_ticket_system" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cinema_ticket_system" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Cinema_ticket_system" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cinema_ticket_system" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="DataObjects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Cinema_ticket_system" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cinema_ticket_system" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="GUIs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Cinema_ticket_system" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cinema_ticket_system" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="GUIs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Cinema_ticket_system" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cinema_ticket_system" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="GUIs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Sales" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="GUIs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="GUIs" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,12 +382,13 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566398068155" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/git-cmd.exe" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/jar_files/mysql-connector-java-8.0.12.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -177,75 +415,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainClass">
-    <configuration name="Admin_Manage_Movies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_class_test.GUIs.Admin.Admin_Manage_Movies" />
-      <module name="JavaClassTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java_class_test.GUIs.Admin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Admin_Manage_Movies_Fragment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_class_test.GUIs.Admin.Admin_Manage_Movies_Fragment" />
-      <module name="JavaClassTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java_class_test.GUIs.Admin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Admin_Menu_Fragment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_class_test.GUIs.Admin.Admin_Menu_Fragment" />
-      <module name="JavaClassTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java_class_test.GUIs.Admin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="MainClass" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_class_test.Controllers.MainClass" />
-      <module name="JavaClassTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java_class_test.GUIs.Admin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sales_Menu_Fragment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_class_test.GUIs.Sales.Sales_Menu_Fragment" />
-      <module name="JavaClassTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java_class_test.GUIs.Sales.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sales_Tickets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_class_test.GUIs.Sales.Sales_Tickets" />
-      <module name="JavaClassTest" />
+      <option name="MAIN_CLASS_NAME" value="cinema_ticket_system.Controllers.MainClass" />
+      <module name="Cinema_ticket_system" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="java_class_test.GUIs.Admin.*" />
@@ -262,23 +435,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.MainClass" />
-      <item itemvalue="Application.Admin_Manage_Movies" />
-      <item itemvalue="Application.Admin_Manage_Movies_Fragment" />
-      <item itemvalue="Application.Admin_Menu_Fragment" />
-      <item itemvalue="Application.Sales_Menu_Fragment" />
-      <item itemvalue="Application.Sales_Tickets" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Admin_Menu_Fragment" />
-        <item itemvalue="Application.Sales_Tickets" />
-        <item itemvalue="Application.Sales_Menu_Fragment" />
-        <item itemvalue="Application.Admin_Manage_Movies" />
-        <item itemvalue="Application.Admin_Manage_Movies_Fragment" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -303,18 +459,18 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Learn" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.21801706" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.22014925" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32902467" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.55659395" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24091381" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32837301" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3281412" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -325,44 +481,17 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3298611" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="1" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Learn" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.18526466" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32902467" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27951807" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3298611" />
-    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/Cinema-Ticket-Booking-System" />
     </ignored-roots>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/AbstractButton.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/DefaultButtonModel.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/EventQueue.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java" />
@@ -383,42 +512,204 @@
     <entry file="file://$PROJECT_DIR$/src/java_class_test/delegates/Delegate.java" />
     <entry file="file://$PROJECT_DIR$/src/java_class_test/delegates/GUDelegate.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/JPasswordField.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Sales/Sales_Main.java" />
     <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/java_class_test/delegates/GUIDelegate.java" />
     <entry file="file://$PROJECT_DIR$/src/resources/R.xml" />
     <entry file="file://$PROJECT_DIR$/src/resources/R.properties" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/JOptionPane.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Movies_Fragment.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/ButtonGroup.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/JRadioButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Seat_Plan_Fragment.java" />
     <entry file="jar://$USER_HOME$/Downloads/material-ui-swing-master/target/classes/material-ui-swing.jar!/mdlaf/MaterialLookAndFeel.class" />
     <entry file="jar://$USER_HOME$/Downloads/material-ui-swing-0.9.6.1-jar-with-dependencies.jar!/mdlaf/components/combobox/MaterialComboBoxUI.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/JProgressBar.java" />
     <entry file="jar://$USER_HOME$/Downloads/material-ui-swing-0.9.6.1-jar-with-dependencies.jar!/mdlaf/components/panel/MaterialPanelUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Home.java" />
     <entry file="jar://$USER_HOME$/Downloads/material-ui-swing-0.9.6.1-jar-with-dependencies.jar!/mdlaf/components/textfield/MaterialTextFieldUI.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/plaf/ComponentUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Sales/Sales_Menu_Fragment.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/ScrollPaneConstants.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/BorderFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Menu_Fragment.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Seat_Plan.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Component.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Movies.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Movies_Edit.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Sales/Sales_Tickets.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Sales/Sales_Seats.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Movies_Edit_Show_Times.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/Controllers/GUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Admin/Admin_Manage_Users.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/GUIs/Login_Form.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/DataObjects/Movie.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/Controllers/DataManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/Controllers/UserInteractions.java" />
-    <entry file="file://$PROJECT_DIR$/src/java_class_test/Controllers/MainClass.java" />
     <entry file="file://$PROJECT_DIR$/JavaClassTest.iml" />
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Home.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit_Show_Times.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Menu_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <element signature="e#7085#7543#0" expanded="true" />
+            <element signature="e#7542#7543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Login_Form.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3415#3740#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Tickets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="166" column="23" selection-start-line="166" selection-start-column="23" selection-end-line="166" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Software files/Jdk Files/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3477">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Sales/Sales_Seats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="167" column="29" lean-forward="true" selection-start-line="165" selection-start-column="70" selection-end-line="167" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="162" column="20" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Menu_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="101" column="42" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1803">
+          <caret line="177" column="49" selection-start-line="177" selection-start-column="49" selection-end-line="177" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -459,7 +750,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -471,11 +762,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JavaClassTest</last-edited>
+          <last-edited>Cinema_ticket_system</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
