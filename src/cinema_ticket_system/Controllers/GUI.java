@@ -1,5 +1,6 @@
 package cinema_ticket_system.Controllers;
 
+import cinema_ticket_system.DataObjects.User;
 import cinema_ticket_system.GUIs.Admin.*;
 import cinema_ticket_system.GUIs.Login_Form;
 import cinema_ticket_system.GUIs.Sales.Sales_Menu_Fragment;
@@ -9,11 +10,9 @@ import com.sun.istack.internal.Nullable;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
+import javax.swing.plaf.basic.BasicListUI;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 
 public class GUI{
     public static final int ADMIN_HOME = 1;
@@ -25,10 +24,11 @@ public class GUI{
     public static final int SALES_TICKETS = 7;
     public static final int SALES_SEATS = 8;
     public static final int ADMIN_MANAGE_MOVIES_FRAGMENT = 9;
+    public static final int EDIT_USER_INFO = 10;
 
     static Dimension login_dim = new Dimension(500 , 400);
     static Dimension default_dim = new Dimension(1200 , 700);
-    static JFrame window = new JFrame();
+    public static JFrame window = new JFrame();
     static JButton btnLogOut = new JButton();
     static JPanel pnlFrag = new JPanel();
     static JPanel pnlframe = new JPanel();
@@ -157,6 +157,7 @@ public class GUI{
             btnLogOut.setText("Log Out");
             btnLogOut.setFont(new Font("Courier", Font.PLAIN, 16));
             btnLogOut.setForeground(Color.WHITE);
+            btnLogOut.setBackground(Color.decode("#242B40"));
             btnLogOut.setBorder(new LineBorder(Color.decode("#FF6767"), 2));
             btnLogOut.setBounds(1080, 40, 90, 40);
             btnLogOut.setHorizontalAlignment(SwingConstants.CENTER);
@@ -179,6 +180,7 @@ public class GUI{
                     btnLogOut.setOpaque(false);
                     btnLogOut.setBorder(new LineBorder(Color.decode("#FF6767"), 2));
                     btnLogOut.setForeground(Color.decode("#FFFFFF"));
+                    btnLogOut.setBackground(Color.decode("#242B40"));
                 }
             });
 
@@ -193,9 +195,21 @@ public class GUI{
                     }
 
                     //Add the Log Out Button to the JPanel
-                    pnlframe.add(btnLogOut);
+
                 }
             });
+
+            pnlframe.add(btnLogOut);
+        }
+    }
+
+    public static boolean dialogable = true;
+    public static void showDialog(User user)
+    {
+        if(dialogable) {
+            Admin_Manage_Users_Edit dialog = new Admin_Manage_Users_Edit(user);
+            window.setFocusable(false);
+            dialogable = false;
         }
     }
 

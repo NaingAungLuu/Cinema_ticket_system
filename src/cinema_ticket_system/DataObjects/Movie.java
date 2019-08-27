@@ -1,12 +1,12 @@
 package cinema_ticket_system.DataObjects;
 
-public class Movie {
-    private int movieId;
-    private String movieName;
-    private int categoryID;
-    private int theatreNo;
-    private String movieType;
-    private String showTime;
+public class Movie extends DataObject{
+    private static int movieId;
+    private static String movieName;
+    private static int categoryID;
+    private static int theatreNo;
+    private static String movieType;
+    private static String showTime;
 
     public Movie(String movieName , int category , int theatreNo, String movieType,String showTime)
     {

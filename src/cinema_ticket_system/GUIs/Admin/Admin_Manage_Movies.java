@@ -136,6 +136,7 @@ public class Admin_Manage_Movies extends JPanel {
 
 
 
+
 			//Table's Title Label
 	        JLabel Movies_on_screen = new JLabel("Movies On Screen");
 			Movies_on_screen.setFont(new Font("Courier" ,Font.PLAIN , 20));

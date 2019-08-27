@@ -1,6 +1,7 @@
 package cinema_ticket_system.Controllers;
 
 import cinema_ticket_system.DataObjects.Movie;
+import cinema_ticket_system.DataObjects.User;
 import com.mysql.cj.protocol.Resultset;
 import cinema_ticket_system.DataObjects.Movie;
 
@@ -112,7 +113,6 @@ public class DataManager {
 
     }
 
-
     public static void addMovie(Movie movie) {
         String sql = "INSERT INTO `cinema`.`tblMovie` (`movieName`, `categoryID`, `theatreNo`, `movieType`) VALUES ('"
                     + movie.getMovieName() + "' , '" + movie.getCategory() + "' , '" + movie.getTheatreNo()
@@ -124,5 +124,40 @@ public class DataManager {
         {
             System.out.println(e);
         }
+    }
+
+    public static void updateUser(User user) {
+        String sql = "UPDATE `cinema`.`tblusers` SET `userID` = '" + user.getUserID()
+                                                +"' ,`userName` = '" + user.getUserName()
+                                                +"' ,`password` = '" + user.getPassword()
+                                                +"' ,`userType` = '" + user.getUserType() +"' WHERE (`userID` = " + user.getUserID()+ ")";
+        try {
+            executeQuery(sql, false);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    public static User getUser(int userID)
+    {
+
+        String sql = "SELECT userID , userName , password , userType FROM tblUsers WHERE"
+                + " userID = '" + userID + "'" ;
+        String[] result = new String[4];
+        try{
+            ResultSet rs = (ResultSet) executeQuery(sql , true);
+            while(rs.next())
+            {
+                result[0] = rs.getString("userID");
+                result[1] = rs.getString("userName");
+                result[2] = rs.getString("password");
+                result[3] = rs.getString("userType");
+            }
+
+        }catch (Exception e)
+        {
+            System.out.println(e);
+        }
+        return new User(Integer.parseInt(result[0]) , result[1] , result[2] , result[3]);
     }
 }

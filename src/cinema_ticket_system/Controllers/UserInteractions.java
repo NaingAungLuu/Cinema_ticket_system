@@ -2,6 +2,7 @@ package cinema_ticket_system.Controllers;
 
 
 import cinema_ticket_system.DataObjects.Movie;
+import cinema_ticket_system.DataObjects.User;
 import cinema_ticket_system.GUIs.Admin.Admin_Manage_Users;
 import cinema_ticket_system.GUIs.Login_Form;
 
@@ -12,10 +13,6 @@ import javax.xml.crypto.Data;
 import java.sql.*;
 import java.util.ArrayList;
 
-import static cinema_ticket_system.Controllers.GUI.show;
-import static cinema_ticket_system.Controllers.GUI.ADMIN_MANAGE_USERS;
-import static cinema_ticket_system.Controllers.GUI.show;
-
 public class UserInteractions{
 
 
@@ -23,7 +20,7 @@ public class UserInteractions{
     public static void LogOut() throws UnsupportedLookAndFeelException {
         MainClass.setUser("DEFAULT" , "DEFAULT");
         GUI.initiateLoginWindow();
-        show(GUI.LOGIN , null);
+        GUI.show(GUI.LOGIN , null);
         Login_Form.clearTextFields();
     }
 
@@ -60,12 +57,12 @@ public class UserInteractions{
                 if(userType.equals(MainClass.ADMIN))
                 {
                     GUI.setupSidePanel(GUI.ADMIN);
-                    show(GUI.ADMIN_HOME , null);
+                    GUI.show(GUI.ADMIN_HOME , null);
                 }
                 else if(userType.equals(MainClass.STAFF))
                 {
                     GUI.setupSidePanel(GUI.STAFF);
-                    show(GUI.SALES_TICKETS , null);
+                    GUI.show(GUI.SALES_TICKETS , null);
                 }
             }
             else //Wrong Password Entered .....
@@ -133,6 +130,11 @@ public class UserInteractions{
     {
         Movie movie = new Movie(movieName, categoryID , theatreNo , movieType , showTime);
         DataManager.addMovie(movie);
+    }
+
+    public void updateUser(User user)
+    {
+        DataManager.updateUser(user);
     }
 
 }

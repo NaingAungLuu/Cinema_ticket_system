@@ -15,7 +15,9 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellEditor;
 
 import cinema_ticket_system.Controllers.DataManager;
+import cinema_ticket_system.Controllers.GUI;
 import cinema_ticket_system.Controllers.UserInteractions;
+import cinema_ticket_system.DataObjects.User;
 import cinema_ticket_system.GUIs.Login_Form;
 
 
@@ -33,6 +35,7 @@ public class Admin_Manage_Users extends JPanel{
     public static JButton btnDelete = new JButton("Delete");
     JTable tblData;
     public static DefaultTableModel model;
+    User currentUser = new User();
 
     JLabel lblUsername = new JLabel("Naing Aung Luu" , SwingConstants.LEFT);
     JLabel lblID = new JLabel("26093");
@@ -84,9 +87,12 @@ public class Admin_Manage_Users extends JPanel{
                 int selectedRow = tblData.getSelectedRow();
                 if(selectedRow >= 0)
                 {
+                    String userID = tblData.getValueAt(selectedRow , 1).toString();
                     lblUsername.setText(tblData.getValueAt(selectedRow , 0).toString());
                     lblID.setText(tblData.getValueAt(selectedRow , 1).toString());
+                    currentUser = DataManager.getUser(Integer.parseInt(userID));
                 }
+
             }
         });
         final Color originColor = new Color(232 , 232 , 232);
@@ -144,6 +150,23 @@ public class Admin_Manage_Users extends JPanel{
         txtID.setMargin(new Insets(5 , 10 , 1 , 0));
         txtID.setBorder(BorderFactory.createLineBorder(Color.decode("#FF6767") , 1 ));
 
+        //Constructin JRadio Buttons for choosing user-type while adding a user
+        final JRadioButton rdoAdmin = new JRadioButton("ADMIN");
+        JRadioButton rdoStaff = new JRadioButton("STAFF");
+        ButtonGroup btnGroup = new ButtonGroup();
+        btnGroup.add(rdoAdmin);
+        btnGroup.add(rdoStaff);
+        rdoStaff.setSelected(true);
+        // 300 , 500 , 350 , 30
+        rdoAdmin.setForeground(Color.decode("#75CBE6"));
+        rdoAdmin.setBackground(Color.decode("#242B40"));
+        rdoAdmin.setBounds(300 , 530 , 100 , 50);
+        rdoAdmin.setFont(new Font("Roboto" , Font.PLAIN, 17));
+
+        rdoStaff.setForeground(Color.decode("#75CBE6"));
+        rdoStaff.setBounds(400 , 530 , 100 , 50);
+        rdoStaff.setFont(new Font("Roboto" , Font.PLAIN, 17));
+        rdoStaff.setBackground(Color.decode("#242B40"));
 
 
         //Constructor for JLabels
@@ -186,23 +209,7 @@ public class Admin_Manage_Users extends JPanel{
         lblIDtag.setForeground(Color.white);
 
 
-        //Constructin JRadio Buttons for choosing user-type while adding a user
-        final JRadioButton rdoAdmin = new JRadioButton("ADMIN");
-        JRadioButton rdoStaff = new JRadioButton("STAFF");
-        ButtonGroup btnGroup = new ButtonGroup();
-        btnGroup.add(rdoAdmin);
-        btnGroup.add(rdoStaff);
-        rdoStaff.setSelected(true);
-        // 300 , 500 , 350 , 30
-        rdoAdmin.setForeground(Color.decode("#75CBE6"));
-        rdoAdmin.setBackground(Color.decode("#242B40"));
-        rdoAdmin.setBounds(300 , 530 , 100 , 50);
-        rdoAdmin.setFont(new Font("Roboto" , Font.PLAIN, 17));
 
-        rdoStaff.setForeground(Color.decode("#75CBE6"));
-        rdoStaff.setBounds(400 , 530 , 150 , 50);
-        rdoStaff.setFont(new Font("Roboto" , Font.PLAIN, 17));
-        rdoStaff.setBackground(Color.decode("#242B40"));
 
 
         //Edit ID
@@ -270,7 +277,12 @@ public class Admin_Manage_Users extends JPanel{
                 btnEdit.setForeground(Color.white);
             }
         });
-        btnEdit.addActionListener(buttons);
+        btnEdit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                GUI.showDialog(currentUser);
+            }
+        });
 
         //Constructor for "Delete" Button
         btnDelete.setBounds(950 , 510 , 90 , 30);
@@ -423,6 +435,10 @@ public class Admin_Manage_Users extends JPanel{
                 } catch (Exception err){
                     System.out.println(err);
                 }
+            }
+            else if(e.getSource() == btnEdit)
+            {
+
             }
         }
 
