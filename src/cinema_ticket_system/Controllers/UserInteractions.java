@@ -132,9 +132,5 @@ public class UserInteractions{
         DataManager.addMovie(movie);
     }
 
-    public void updateUser(User user)
-    {
-        DataManager.updateUser(user);
-    }
 
 }

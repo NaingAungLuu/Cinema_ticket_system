@@ -87,18 +87,15 @@ public class Admin_Manage_Users_Edit {
                 btnAdd.setForeground(Color.white);
             }
         });
-        btnAdd.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String userType = rdoAdmin.isSelected() ?  "ADMIN" : "STAFF";
-                DataManager.updateUser(new User(Integer.parseInt(txtID.getText()) , txtUsername.getText() , txtPassword.getText() , userType));
-                window.dispose();
-                System.out.println("Edit window disposed");
-                DataManager.refreshUserData(Admin_Manage_Users.model);
-                GUI.window.setEnabled(true);
-                GUI.window.requestFocus();
-                GUI.dialogable = true;
-            }
+        btnAdd.addActionListener(e -> {
+            String userType = rdoAdmin.isSelected() ?  "ADMIN" : "STAFF";
+            DataManager.updateUser(new User(Integer.parseInt(txtID.getText()) , txtUsername.getText() , txtPassword.getText() , userType));
+            window.dispose();
+            System.out.println("Edit window disposed");
+            DataManager.refreshUserData(Admin_Manage_Users.model);
+            GUI.window.setEnabled(true);
+            GUI.window.requestFocus();
+            GUI.dialogable = true;
         });
 
         JPanel panel = new JPanel();

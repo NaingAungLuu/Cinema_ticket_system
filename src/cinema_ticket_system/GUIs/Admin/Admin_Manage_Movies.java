@@ -1,5 +1,8 @@
 package cinema_ticket_system.GUIs.Admin;
 import cinema_ticket_system.Controllers.DataManager;
+import cinema_ticket_system.Controllers.GUI;
+import cinema_ticket_system.DataObjects.Movie;
+import cinema_ticket_system.DataObjects.MovieCategory;
 import cinema_ticket_system.GUIs.Login_Form;
 import cinema_ticket_system.GUIs.Sales.Sales_Tickets;
 import cinema_ticket_system.Controllers.UserInteractions;
@@ -8,6 +11,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.*;
+import java.util.List;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -183,6 +188,13 @@ public class Admin_Manage_Movies extends JPanel {
 			lblMovieTimes.setFont(new Font("Courier" , Font.PLAIN , 18));
 			lblMovieTimes.setForeground(Color.WHITE);
 
+			//Constructor for TextAreas
+			//Movie Name
+			JTextArea txtMovieName = new JTextArea("Movie Name");
+			txtMovieName.setFont(new Font("Nadeem" , Font.PLAIN , 16));
+			txtMovieName.setBounds(300 , 425 , 350 , 25);
+			txtMovieName.setAlignmentX(1);
+
 			//Constructor for "Edit Movie" Button
 
 			btnEdit.setBounds(715 , 530 , 100 , 40);
@@ -335,31 +347,7 @@ public class Admin_Manage_Movies extends JPanel {
 
 
 			
-			//Constructor for Add Button
 
-			btnAddMovie.setBounds(550 , 525 , 100 , 40);
-			btnAddMovie.setBackground(Color.decode("#FF6767"));
-			btnAddMovie.setForeground(Color.WHITE);
-			btnAddMovie.setContentAreaFilled(false);
-			btnAddMovie.setBorder(new LineBorder(Color.decode("#242B40") , 2));
-			btnAddMovie.setOpaque(true);
-			btnAddMovie.addActionListener(buttons);
-			btnAddMovie.addMouseListener(new MouseAdapter() {
-				@Override
-				public void mouseEntered(MouseEvent e) {
-					super.mouseEntered(e);
-					btnAddMovie.setBackground(Color.white);
-					btnAddMovie.setForeground(Color.decode("#FF6767"));
-				}
-			});
-			btnAddMovie.addMouseListener(new MouseAdapter() {
-				@Override
-				public void mouseExited(MouseEvent e) {
-					super.mouseExited(e);
-					btnAddMovie.setBackground(Color.decode("#FF6767"));
-					btnAddMovie.setForeground(Color.white);
-				}
-			});
 
 			final JButton btnShowTimes = new JButton("Show Times");
 			btnShowTimes.setBackground(new Color(117, 203, 230));
@@ -384,6 +372,12 @@ public class Admin_Manage_Movies extends JPanel {
 				}
 
 			});
+			btnShowTimes.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					GUI.showMovieShowTimesDialog();
+				}
+			});
 			
 			//Constructor for Add Area
 			//Constructor for Radio Buttons
@@ -397,6 +391,8 @@ public class Admin_Manage_Movies extends JPanel {
 			rdo2D.setBounds(590 , 490 , 72 , 30);
 			rdo3D.setForeground(Color.decode("#FFFFFF"));
 			rdo2D.setForeground(Color.decode("#FFFFFF"));
+			rdo2D.setBackground(Color.decode("#242B40"));
+			rdo3D.setBackground(Color.decode("#242B40"));
 			rdo3D.setFont(new Font("Nadeem" , Font.PLAIN , 18));
 			rdo2D.setFont(new Font("Nadeem" , Font.PLAIN , 18));
 			//Constructor for ComboBoxes
@@ -406,24 +402,48 @@ public class Admin_Manage_Movies extends JPanel {
 			cboTheatreNo.addItem("Theatre 3");
 			cboTheatreNo.addItem("Theatre 4   ");
 			cboTheatreNo.setSelectedIndex(0);
-			cboTheatreNo.setBounds(405 , 460 , 250 , 25);
+			cboTheatreNo.setBounds(415 , 460 , 240 , 25);
 
 			JComboBox<String> cboCategory = new JComboBox<>();
-			cboCategory.addItem("Action");
-			cboCategory.addItem("Horror");
-			cboCategory.addItem("Thriller");
-			cboCategory.addItem("Asian");
-			cboCategory.addItem("Burmese");
-			cboCategory.addItem("Indian");
+			ArrayList<MovieCategory> categories = DataManager.getCategories();
+
+			for(int i = 0 ; i< categories.size() ; i++)
+			{
+				cboCategory.addItem(categories.get(i).getCategoryName());
+//			}
 			cboCategory.setSelectedIndex(0);
-			cboCategory.setBounds(405 , 493 , 125 , 25);
-			
-			//Constructor for TextAreas
-			//Movie Name
-			JTextArea txtMovieName = new JTextArea("Movie Name");
-			txtMovieName.setFont(new Font("Nadeem" , Font.PLAIN , 16));
-			txtMovieName.setBounds(300 , 425 , 350 , 25);
-			txtMovieName.setAlignmentX(1);
+			cboCategory.setBounds(415 , 493 , 115 , 25);
+
+			//Constructor for Add Button
+
+			btnAddMovie.setBounds(550 , 525 , 100 , 40);
+			btnAddMovie.setBackground(Color.decode("#FF6767"));
+			btnAddMovie.setForeground(Color.WHITE);
+			btnAddMovie.setContentAreaFilled(false);
+			btnAddMovie.setBorder(new LineBorder(Color.decode("#242B40") , 2));
+			btnAddMovie.setOpaque(true);
+			btnAddMovie.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					Movie movie = new Movie(txtMovieName.getText() , categories.get(cboCategory.getSelectedIndex()).getCategoryID() , )
+				}
+			});
+			btnAddMovie.addMouseListener(new MouseAdapter() {
+				@Override
+				public void mouseEntered(MouseEvent e) {
+					super.mouseEntered(e);
+					btnAddMovie.setBackground(Color.white);
+					btnAddMovie.setForeground(Color.decode("#FF6767"));
+				}
+			});
+			btnAddMovie.addMouseListener(new MouseAdapter() {
+				@Override
+				public void mouseExited(MouseEvent e) {
+					super.mouseExited(e);
+					btnAddMovie.setBackground(Color.decode("#FF6767"));
+					btnAddMovie.setForeground(Color.white);
+				}
+			});
 
 
 			//Constructor for JPanel
@@ -453,6 +473,7 @@ public class Admin_Manage_Movies extends JPanel {
 			add(btnEdit);
 			add(btnDelete);
 			add(btnShowTimes);
+
 
 
 		}

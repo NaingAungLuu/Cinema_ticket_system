@@ -204,13 +204,21 @@ public class GUI{
     }
 
     public static boolean dialogable = true;
-    public static void showDialog(User user)
+    public static void showUserEditDialog(User user)
     {
         if(dialogable) {
             Admin_Manage_Users_Edit dialog = new Admin_Manage_Users_Edit(user);
             window.setFocusable(false);
             dialogable = false;
         }
+    }
+    public static boolean showTimeDialogable = true;
+    public static void showMovieShowTimesDialog()
+    {
+      if(showTimeDialogable)
+      {
+
+      }
     }
 
 }

@@ -17,6 +17,12 @@ public class Movie extends DataObject{
         this.showTime = showTime;
     }
 
+    public Movie(String movieName , int categoryID)
+    {
+        this.movieName = movieName;
+        this.categoryID = categoryID;
+    }
+
     public String getMovieName() {
         return this.movieName;
     }

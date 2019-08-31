@@ -5,20 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c8e7b4e-2464-42a2-93f7-886e9a6bc461" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/DataObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/META-INF/Cinema_ticket_system.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_extras/Cinema_Database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_extras/mysql-connector-java-8.0.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/MovieCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Theatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema-Ticket-Booking-System" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/DataManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/DataManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/GUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/GUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/GUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/GUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/GUI$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/GUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/UserInteractions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/Controllers/UserInteractions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/DataObjects/DataObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/DataObjects/DataObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/DataObjects/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/DataObjects/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$ButtonHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies$ButtonHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$10.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$12.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$4.class" afterDir="false" />
@@ -30,12 +62,16 @@
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$ButtonHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$ButtonHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$HintTextField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users$HintTextField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_ticket_system/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/DataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/DataObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,27 +89,47 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="7638">
+              <caret line="427" column="134" selection-start-line="427" selection-start-column="134" selection-end-line="427" selection-end-column="134" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Theatre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/MovieCategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+            <state relative-caret-position="1596">
+              <caret line="180" column="26" selection-start-line="180" selection-start-column="26" selection-end-line="180" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#initiateConnection#0;class#DataManager#0" />
+                <element signature="method#executeQuery#0;class#DataManager#0" />
+                <element signature="method#getLoginInfo#0;class#DataManager#0" />
                 <element signature="method#refreshUserData#0;class#DataManager#0" />
                 <element signature="method#addUser#0;class#DataManager#0" />
                 <element signature="method#deleteUser#0;class#DataManager#0" />
-                <element signature="method#addMovie#0;class#DataManager#0" />
                 <element signature="method#updateUser#0;class#DataManager#0" />
                 <element signature="method#getUser#0;class#DataManager#0" />
               </folding>
@@ -82,26 +138,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/MainClass.java">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit_Show_Times.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="1672">
+              <caret line="94" column="46" selection-start-line="94" selection-start-column="46" selection-end-line="94" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1957">
-              <caret line="168" column="56" lean-forward="true" selection-start-line="168" selection-start-column="56" selection-end-line="168" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#11616#11617#0" expanded="true" />
-                <element signature="e#11675#11676#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="205" column="10" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
+            <state relative-caret-position="3211">
+              <caret line="219" selection-start-line="219" selection-end-line="219" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#prepareFrame#0;class#GUI#0" />
@@ -123,37 +165,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/DataObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="95">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="136" column="37" selection-start-line="136" selection-start-column="37" selection-end-line="136" selection-end-column="37" />
+            <state relative-caret-position="1786">
+              <caret line="100" column="44" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Login#0;class#UserInteractions#0" />
-                <element signature="method#deleteUser#0;class#UserInteractions#0" />
-                <element signature="method#getCheckBoxData#0;class#UserInteractions#0" />
-                <element signature="method#addMovie#0;class#UserInteractions#0" />
-                <element signature="e#4908#4909#0" expanded="true" />
-                <element signature="e#4952#4953#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,34 +191,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="418">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/User.java">
+        <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+            <state relative-caret-position="722">
+              <caret line="130" column="37" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
               <folding>
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#716#717#0" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#Login#0;class#UserInteractions#0" />
+                <element signature="method#addUser#0;class#UserInteractions#0" />
+                <element signature="method#deleteUser#0;class#UserInteractions#0" />
+                <element signature="method#getCheckBoxData#0;class#UserInteractions#0" />
               </folding>
             </state>
           </provider>
@@ -249,10 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/java_class_test/Sales/Sales_Tickets.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Login_Form.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/MainClass.java" />
-        <option value="$PROJECT_DIR$/src/java_class_test/Admin/Admin_Menu_Fragment.java" />
         <option value="$PROJECT_DIR$/src/java_class_test/Sales/Sales_Seats.java" />
         <option value="$PROJECT_DIR$/src/java_class_test/delegates/GUIDelegate.java" />
         <option value="$PROJECT_DIR$/src/java_class_test/GUI.java" />
@@ -291,15 +305,19 @@
         <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan.java" />
         <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan_Fragment.java" />
         <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Menu_Fragment.java" />
-        <option value="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java" />
-        <option value="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Movie.java" />
-        <option value="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/DataObject.java" />
         <option value="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/User.java" />
         <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java" />
-        <option value="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java" />
         <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit.java" />
-        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Edit_Show_Times.form" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/EditShowTimes.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/DataObject.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Movie.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/MovieCategory.java" />
         <option value="$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java" />
+        <option value="$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Theatre.java" />
       </list>
     </option>
   </component>
@@ -314,6 +332,62 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="DataObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="GUIs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
+              <item name="GUIs" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -373,58 +447,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="DataObjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="GUIs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cinema_ticket_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema_ticket_system" type="462c0819:PsiDirectoryNode" />
-              <item name="GUIs" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,10 +454,11 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="312" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566398068155" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/jar_files/mysql-connector-java-8.0.12.jar!/" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/project_extras/mysql-connector-java-8.0.12.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -466,7 +489,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainClass">
+    <configuration name="EditShowTimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cinema_ticket_system.GUIs.Admin.EditShowTimes" />
+      <module name="Cinema_ticket_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cinema_ticket_system.GUIs.Admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainClass" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cinema_ticket_system.Controllers.MainClass" />
       <module name="Cinema_ticket_system" />
@@ -486,6 +522,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EditShowTimes" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -510,18 +551,18 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Learn" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.22014925" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.22654584" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32902467" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24091381" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24568528" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39781746" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3281412" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32738096" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -543,10 +584,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/JComponent.java" />
-    <entry file="file://$PROJECT_DIR$/.classpath" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/JTable.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/JFrame.java" />
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -666,26 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit_Show_Times.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="94" column="46" lean-forward="true" selection-start-line="94" selection-start-column="46" selection-end-line="94" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1293">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Seat_Plan_Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -703,10 +720,115 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="342">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUser#0;class#MainClass#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="278" column="39" selection-start-line="278" selection-start-column="39" selection-end-line="278" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Edit_Show_Times.form" />
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/EditShowTimes.java" />
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7638">
+          <caret line="427" column="134" selection-start-line="427" selection-start-column="134" selection-end-line="427" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/MovieCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="180" column="26" selection-start-line="180" selection-start-column="26" selection-end-line="180" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initiateConnection#0;class#DataManager#0" />
+            <element signature="method#executeQuery#0;class#DataManager#0" />
+            <element signature="method#getLoginInfo#0;class#DataManager#0" />
+            <element signature="method#refreshUserData#0;class#DataManager#0" />
+            <element signature="method#addUser#0;class#DataManager#0" />
+            <element signature="method#deleteUser#0;class#DataManager#0" />
+            <element signature="method#updateUser#0;class#DataManager#0" />
+            <element signature="method#getUser#0;class#DataManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit_Show_Times.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="94" column="46" selection-start-line="94" selection-start-column="46" selection-end-line="94" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3211">
+          <caret line="219" selection-start-line="219" selection-end-line="219" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#prepareFrame#0;class#GUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/DataObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies_Edit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1786">
+          <caret line="100" column="44" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -715,112 +837,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/DataObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/UserInteractions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="136" column="37" selection-start-line="136" selection-start-column="37" selection-end-line="136" selection-end-column="37" />
+        <state relative-caret-position="722">
+          <caret line="130" column="37" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Login#0;class#UserInteractions#0" />
+            <element signature="method#addUser#0;class#UserInteractions#0" />
             <element signature="method#deleteUser#0;class#UserInteractions#0" />
             <element signature="method#getCheckBoxData#0;class#UserInteractions#0" />
-            <element signature="method#addMovie#0;class#UserInteractions#0" />
-            <element signature="e#4908#4909#0" expanded="true" />
-            <element signature="e#4952#4953#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/DataObjects/Theatre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="205" column="10" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#prepareFrame#0;class#GUI#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1957">
-          <caret line="168" column="56" lean-forward="true" selection-start-line="168" selection-start-column="56" selection-end-line="168" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#11616#11617#0" expanded="true" />
-            <element signature="e#11675#11676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Users_Edit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/GUIs/Admin/Admin_Manage_Movies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema_ticket_system/Controllers/DataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#refreshUserData#0;class#DataManager#0" />
-            <element signature="method#addUser#0;class#DataManager#0" />
-            <element signature="method#deleteUser#0;class#DataManager#0" />
-            <element signature="method#addMovie#0;class#DataManager#0" />
-            <element signature="method#updateUser#0;class#DataManager#0" />
-            <element signature="method#getUser#0;class#DataManager#0" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

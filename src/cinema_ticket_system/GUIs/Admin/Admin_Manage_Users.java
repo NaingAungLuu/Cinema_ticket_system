@@ -1,18 +1,14 @@
 package cinema_ticket_system.GUIs.Admin;
 import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
-import javax.swing.event.*;
 
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableCellEditor;
 
 import cinema_ticket_system.Controllers.DataManager;
 import cinema_ticket_system.Controllers.GUI;
@@ -280,7 +276,7 @@ public class Admin_Manage_Users extends JPanel{
         btnEdit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                GUI.showDialog(currentUser);
+                GUI.showUserEditDialog(currentUser);
             }
         });
 
