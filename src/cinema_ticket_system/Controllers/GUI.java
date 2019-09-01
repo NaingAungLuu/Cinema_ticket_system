@@ -6,7 +6,7 @@ import cinema_ticket_system.GUIs.Login_Form;
 import cinema_ticket_system.GUIs.Sales.Sales_Menu_Fragment;
 import cinema_ticket_system.GUIs.Sales.Sales_Seats;
 import cinema_ticket_system.GUIs.Sales.Sales_Tickets;
-import com.sun.istack.internal.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -32,6 +32,7 @@ public class GUI{
     static JButton btnLogOut = new JButton();
     static JPanel pnlFrag = new JPanel();
     static JPanel pnlframe = new JPanel();
+    static JPanel pnlSidePanel;
     private static String UserName = "Default";
     private static String UserType = "DEFAULT";
     public static final String ADMIN = "ADMIN";
@@ -46,13 +47,15 @@ public class GUI{
         //Build UserInterface based on UserType
         if(userType.equals(STAFF))
         {
-            pnlFrag.add(new Sales_Menu_Fragment());
+            pnlSidePanel = new Sales_Menu_Fragment();
+            pnlFrag.add(pnlSidePanel);
             System.out.println("Staff panel attached");
             //pnlFrag.add(new Sales_Tickets());
         }
         else if(userType.equals(ADMIN))
         {
-            pnlFrag.add(new Admin_Menu_Fragment());
+            pnlSidePanel = new Admin_Menu_Fragment();
+            pnlFrag.add(pnlSidePanel);
             System.out.println("Admin Menu Panel Attached");
         }
         pnlFrag.updateUI();
@@ -105,6 +108,7 @@ public class GUI{
 
             //Admin Panels
             case ADMIN_HOME :
+
                                 pnlframe = new Admin_Home();
                                 pnlFrag.add(pnlframe);
                                 System.out.println("Admin Home Panel Attached");
@@ -153,6 +157,7 @@ public class GUI{
     private static void prepareFrame(int ID)
     {
         if(ID != LOGIN) {
+            pnlSidePanel.updateUI();
             //Adds Log Out Button to the Frame
             btnLogOut.setText("Log Out");
             btnLogOut.setFont(new Font("Courier", Font.PLAIN, 16));

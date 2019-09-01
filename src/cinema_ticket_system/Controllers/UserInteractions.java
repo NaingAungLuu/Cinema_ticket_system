@@ -3,6 +3,7 @@ package cinema_ticket_system.Controllers;
 
 import cinema_ticket_system.DataObjects.Movie;
 import cinema_ticket_system.DataObjects.User;
+import cinema_ticket_system.GUIs.Admin.Admin_Manage_Movies;
 import cinema_ticket_system.GUIs.Admin.Admin_Manage_Users;
 import cinema_ticket_system.GUIs.Login_Form;
 
@@ -111,6 +112,16 @@ public class UserInteractions{
        }
     }
 
+    public static void deleteMovie(String movieName) throws Exception {
+        int result = JOptionPane.showConfirmDialog(JOptionPane.getRootFrame(),
+                "Are you sure you want to delete " + movieName + " ?",
+                "Confirm" , JOptionPane.YES_NO_OPTION , JOptionPane.WARNING_MESSAGE);
+        if(result == JOptionPane.YES_OPTION)
+        {
+            DataManager.deleteMovie(movieName);
+        }
+    }
+
     public static String[] getCheckBoxData(ArrayList<JCheckBox> checkBoxes) {
 
         ArrayList<String> showTimes = new ArrayList<>();
@@ -125,12 +136,5 @@ public class UserInteractions{
         return showTimes.toArray(new String[0]);
 
     }
-
-    public void addMovie(String movieName , int categoryID , int theatreNo, String movieType,String showTime)
-    {
-        Movie movie = new Movie(movieName, categoryID , theatreNo , movieType , showTime);
-        DataManager.addMovie(movie);
-    }
-
 
 }

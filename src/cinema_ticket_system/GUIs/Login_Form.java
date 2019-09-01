@@ -123,7 +123,7 @@ public class Login_Form extends JPanel{
 				add(lblCinemaname1);
 
 
-
+				txtUsername.grabFocus();
 
 	}
 	public static void clearTextFields()

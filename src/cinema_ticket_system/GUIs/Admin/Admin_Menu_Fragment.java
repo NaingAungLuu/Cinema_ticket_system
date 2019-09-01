@@ -11,11 +11,13 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import static cinema_ticket_system.GUIs.Admin.Admin_Manage_Users.btnReport;
+
 public class Admin_Menu_Fragment extends JPanel {
     public static JFrame window = new JFrame("Admin");
     public static JButton btnLogOut = new JButton("Log Out");
     static JPanel SidePanel = new JPanel();
-    static ButtonHandler buttons = new ButtonHandler();
+    Admin_Menu_Fragment.ButtonHandler buttons = new ButtonHandler() ;
     static JButton btnAddMovieArt = new JButton("+");
     static JButton btnManageUsers = new JButton("Manage Users");
     static JButton btnManageSeatPlan = new JButton("Manage Seat Plan");
@@ -26,46 +28,32 @@ public class Admin_Menu_Fragment extends JPanel {
     String strMovieType = "2D";
     String strTheatreNo = "1 , 2";
     String strMovieTime = "9:00am , 11:30am , 1.30pm , 3:00pm \n , 5:00pm , 7:00pm";
-    JLabel lblMovieName = new JLabel(strMovieName);
-    JLabel lblMovieType = new JLabel(strMovieType);
-    JLabel lblTheatreNo  = new JLabel(strTheatreNo);
-    JLabel lblMovieTimes = new JLabel(strMovieTime);
+    JLabel lblMovieName = new JLabel(this.strMovieName);
+    JLabel lblMovieType = new JLabel(this.strMovieType);
+    JLabel lblTheatreNo  = new JLabel(this.strTheatreNo);
+    JLabel lblMovieTimes = new JLabel(this.strMovieTime);
     public static JPanel content = new JPanel();
     static String showtimes = "9:00am , 11:30am , 1.30pm , 3:00pm \n , 5:00pm , 7:00pm";
-    static String data[][] = {{"Aquaman" , "1 , 2" , showtimes , "3D"} ,
-            {"How To Train Your Dragon \n (The Hidden World)" , "3" , showtimes , "2D"} ,
-            {"Oh My Ghost 6" , "4" , showtimes , "2D"} };
-    static String numbers[] = {"Movie Name" , "Theatre No." , "Show Times" , "Type"};
-    static JTable Jt = new JTable(data , numbers);
+    static String[][] data = {{"Aquaman" , "1 , 2" , Admin_Menu_Fragment.showtimes, "3D"} ,
+            {"How To Train Your Dragon \n (The Hidden World)" , "3" , Admin_Menu_Fragment.showtimes, "2D"} ,
+            {"Oh My Ghost 6" , "4" , Admin_Menu_Fragment.showtimes, "2D"} };
+    static String[] numbers = {"Movie Name" , "Theatre No." , "Show Times" , "Type"};
+    static JTable Jt = new JTable(Admin_Menu_Fragment.data, Admin_Menu_Fragment.numbers);
 
-    public static void main(String[]args)
-    {
+    static JPanel panel;
 
-        JPanel pnlmain = new JPanel();
-        pnlmain.setLayout(null);
-        pnlmain.setBackground(Color.black);
-        pnlmain.add(new Admin_Menu_Fragment());
-        content.setLayout(null);
-        window.setContentPane(pnlmain);
-        content.setBackground(Color.decode("#242B40"));
-        window.setSize(1200 , 700);
-        window.setLocation(100, 100);
-        window.setTitle("Cinema Ticket Booking System");
-        window.setName("Cinema Ticket Booking System");
-        window.setVisible(true);
-        window.setResizable(false);
-        window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-    }
     public Admin_Menu_Fragment()
     {
 
+
         //Constructor for JLabels
         //Admin_main label
-        JLabel lblUser_name = new JLabel(MainClass.getUserName() , SwingConstants.CENTER);
+        final JLabel lblUser_name = new JLabel(MainClass.getUserName() , SwingConstants.CENTER);
         lblUser_name.setFont(new Font("Roboto" ,Font.PLAIN , 20));
         lblUser_name.setForeground(Color.decode("#75CBE6"));
         lblUser_name.setBackground(Color.white);
         lblUser_name.setBounds( 30 , 50 , 200, 50);
+
 
         //Constructor for "Manage movies" Button
         btnManagemovies.setFont(new Font("Roboto" , Font.PLAIN , 16));
@@ -94,11 +82,11 @@ public class Admin_Menu_Fragment extends JPanel {
         btnManageUsers.setOpaque(false);
         btnManageUsers.setContentAreaFilled(false);
         btnManageUsers.setBorderPainted(false);
-        btnManageUsers.setBounds(25 , 180 , 200 , 50);
+        btnManageUsers.setBounds(0 , 180 , 250 , 50);
         btnManageUsers.addActionListener(buttons);
 
         //Constructor for "Report" Button
-        JButton btnReport = new JButton("Reports");
+        final JButton btnReport = new JButton("Reports");
         btnReport.setFont(new Font("Roboto" , Font.PLAIN , 16));
         btnReport.setBackground(Color.decode("#242B40"));
         btnReport.setForeground(Color.decode("#75CBE6"));
@@ -120,58 +108,56 @@ public class Admin_Menu_Fragment extends JPanel {
 
     }
 
-    public static class ButtonHandler implements ActionListener{
-        public void actionPerformed(ActionEvent e)
+    public void updateGUI()
+    {
+        updateUI();
+    }
+
+
+
+
+    public class ButtonHandler implements ActionListener{
+        public void actionPerformed(final ActionEvent e)
         {
+            int selectedIndex = 0;
             if(e.getSource() == btnManageSeatPlan)
             {
+                selectedIndex = 2;
                 try {
-                    GUI.show(GUI.ADMIN_MANAGE_SEAT_PLAN , null);
-                } catch (UnsupportedLookAndFeelException e1) {
+                    GUI.show(GUI.ADMIN_MANAGE_SEAT_PLAN , new Object[]{1});
+                } catch (final UnsupportedLookAndFeelException e1) {
                     e1.printStackTrace();
                 }
             }
             else if(e.getSource() == btnManagemovies)
             {
+                selectedIndex =1;
                 try {
-                    GUI.show(GUI.ADMIN_MANAGE_MOVIES , null);
-                } catch (UnsupportedLookAndFeelException e1) {
+                    GUI.show(GUI.ADMIN_MANAGE_MOVIES , new Object[]{2});
+                } catch (final UnsupportedLookAndFeelException e1) {
                     e1.printStackTrace();
                 }
             }
             else if(e.getSource() == btnManageUsers)
             {
+                selectedIndex = 3;
                 try {
-                    GUI.show(GUI.ADMIN_MANAGE_USERS , null);
-                } catch (UnsupportedLookAndFeelException e1) {
+                    GUI.show(GUI.ADMIN_MANAGE_USERS , new Object[]{3});
+                } catch (final UnsupportedLookAndFeelException e1) {
                     e1.printStackTrace();
                 }
             }
-            else if(e.getSource() == btnAddMovieArt)
+            JButton[] sideButtons = new JButton[]{btnManagemovies , btnManageSeatPlan, btnManageUsers  , btnReport};
+            for(int i = 0 ; i< sideButtons.length ; i++)
             {
-                JFileChooser choosefile = new JFileChooser();
-                FileNameExtensionFilter filter = new FileNameExtensionFilter("Images" , "jpg" , "jpeg" , "png");
-                choosefile.setFileFilter(filter);
-                int result = choosefile.showOpenDialog(null);
-                if(result == JFileChooser.APPROVE_OPTION) {
-                    File file = choosefile.getSelectedFile();
-                    try {
-                        btnAddMovieArt.setText("");
-                        btnAddMovieArt.setIcon(Sales_Tickets.scaleImage(new ImageIcon(ImageIO.read(file)) , 205 , 205) );
-
-                    }catch(IOException err)
-                    {
-                        String msg = "Error while fetching file\nPlease make sure you have selected an image file";
-                        JOptionPane.showMessageDialog(window , msg , "Error" , JOptionPane.ERROR_MESSAGE);
-                    }
+                sideButtons[i].setForeground(Color.decode("#75CBE6"));
+                if((i+1) == selectedIndex)
+                {
+                    sideButtons[i].setForeground(Color.white);
                 }
             }
-            else if(e.getSource() == btnEdit)
-            {
-                Admin_Manage_Movies_Edit frmEdit = new Admin_Manage_Movies_Edit();
-
-            }
-
+            updateGUI();
+            System.out.println("menu selected " + selectedIndex);
         }
 
     }

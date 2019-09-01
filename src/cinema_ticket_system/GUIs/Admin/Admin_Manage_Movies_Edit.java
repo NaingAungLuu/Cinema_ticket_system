@@ -1,4 +1,9 @@
 package cinema_ticket_system.GUIs.Admin;
+import cinema_ticket_system.Controllers.MovieEditFormDelegate;
+import cinema_ticket_system.DataObjects.Movie;
+import cinema_ticket_system.Utils.Utils;
+import org.jetbrains.annotations.Nullable;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -11,14 +16,46 @@ public class Admin_Manage_Movies_Edit {
     static JButton btnShowTime = new JButton("Show Times");
     static JButton btnSave = new JButton("Save");
     static JPanel content = new JPanel();
-    public static void main(String[] arg)
+    private static Admin_Manage_Movies_Edit objInstance ;
+    private static String[] selectedTime= {"Time 1 " , "Time 2" , "Time 3"};
+
+    private static JTextArea txtMovieName = new JTextArea();
+    private static JComboBox<String> cboTheatreNo = new JComboBox<>();
+    private static JRadioButton rdo2d = new JRadioButton("2D" , false);
+    private static JRadioButton rdo3d = new JRadioButton("3D" , true);
+    ButtonGroup btnGp = new ButtonGroup();
+    public static int movieId = 0;
+
+    private MovieEditFormDelegate mDelegate;
+
+    public static Admin_Manage_Movies_Edit getObjInstance(MovieEditFormDelegate mDelegate)
     {
-        Admin_Manage_Movies_Edit frmEdit = new Admin_Manage_Movies_Edit();
+        if(objInstance == null)
+        {
+            objInstance = new Admin_Manage_Movies_Edit(mDelegate);
+        }
+        return objInstance;
     }
 
-    Admin_Manage_Movies_Edit()
+    public static void setMovieId(int MovieID)
     {
-        JTextArea txtMovieName = new JTextArea();
+        movieId = MovieID;
+    }
+
+    public static Movie getUpdateData()
+    {
+        Movie movie = new Movie(Utils.cleanString(txtMovieName.getText()) , "Action" );
+        movie.setTheatreNo(cboTheatreNo.getSelectedIndex()+1);
+        movie.setMovieType(rdo3d.isSelected() ? "3D" : "2D");
+        movie.setMovieId(movieId);
+        movie.setCategoryName("Action");
+        return  movie;
+    }
+
+    private Admin_Manage_Movies_Edit(MovieEditFormDelegate delegate)
+    {
+
+
         txtMovieName.setBounds(40 , 30, 350 , 50 );
         txtMovieName.setBackground(Color.decode("#D5D3D3"));
         txtMovieName.setFont(new Font("Arial" , Font.PLAIN , 16 ));
@@ -39,7 +76,12 @@ public class Admin_Manage_Movies_Edit {
         btnSave.setContentAreaFilled(false);
         btnSave.setBorder(new LineBorder(Color.decode("#242B40") , 2));
         btnSave.setOpaque(true);
-        btnSave.addActionListener(buttons);
+        btnSave.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                delegate.onSave(window);
+            }
+        });
         btnSave.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
@@ -57,16 +99,14 @@ public class Admin_Manage_Movies_Edit {
             }
         });
 
-        JComboBox<String> cboTheatreNo = new JComboBox<>();
+
         cboTheatreNo.setBackground(Color.decode("#D5D3D3"));
         cboTheatreNo.setBounds(38 , 140 , 200 , 20 );
         cboTheatreNo.addItem("Theatre 1 , 2");
         cboTheatreNo.addItem("Theatre 3");
         cboTheatreNo.addItem("Theatre 4");
 
-        JRadioButton rdo2d = new JRadioButton("2D" , false);
-        JRadioButton rdo3d = new JRadioButton("3D" , true);
-        ButtonGroup btnGp = new ButtonGroup();
+
         btnGp.add(rdo2d);
         btnGp.add(rdo3d);
         rdo2d.setBounds(240 , 90 , 60 , 30);
@@ -104,11 +144,6 @@ public class Admin_Manage_Movies_Edit {
                 String[] showData = {};
                 Admin_Manage_Movies_Edit_Show_Times frmshow = new Admin_Manage_Movies_Edit_Show_Times(showData);
                 frmshow.window.setAlwaysOnTop(true);
-            }
-            else if(e.getSource() == btnSave)
-            {
-                Admin_Manage_Movies frmManageMovies = new Admin_Manage_Movies();
-                window.dispose();
             }
         }
     }

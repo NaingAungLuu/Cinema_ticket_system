@@ -1,8 +1,8 @@
 package cinema_ticket_system.DataObjects;
 
 public class MovieCategory {
-    private static  int categoryID;
-    private static  String categoryName;
+    private  int categoryID;
+    private   String categoryName;
 
     public MovieCategory(int categoryID , String categoryName)
     {
@@ -11,19 +11,19 @@ public class MovieCategory {
     }
 
 
-    public static int getCategoryID() {
-        return MovieCategory.categoryID;
+    public  int getCategoryID() {
+        return categoryID;
     }
 
-    public static void setCategoryID(final int categoryID) {
-        MovieCategory.categoryID = categoryID;
+    public  void setCategoryID(final int categoryID) {
+        this.categoryID = categoryID;
     }
 
-    public static String getCategoryName() {
-        return MovieCategory.categoryName;
+    public  String getCategoryName() {
+        return categoryName;
     }
 
-    public static void setCategoryName(final String categoryName) {
-        MovieCategory.categoryName = categoryName;
+    public  void setCategoryName(final String categoryName) {
+        this.categoryName = categoryName;
     }
 }

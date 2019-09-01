@@ -130,7 +130,7 @@ public class Admin_Manage_Seat_Plan extends JPanel{
 
 				//Constructor for JPanel
 				setLayout(null);
-				setBackground(Color.decode("#242B40"));
+				setBackground(Color.decode("#181f2e"));
 				setBounds(0 , 0 , 1200 , 720);
 				add(Admin_main);
 				add(rdo3D);

@@ -3,17 +3,14 @@ package cinema_ticket_system.Controllers;
 import cinema_ticket_system.DataObjects.Movie;
 import cinema_ticket_system.DataObjects.MovieCategory;
 import cinema_ticket_system.DataObjects.User;
+import cinema_ticket_system.Utils.Utils;
 import com.mysql.cj.protocol.Resultset;
-import cinema_ticket_system.DataObjects.Movie;
-import com.sun.xml.internal.fastinfoset.util.StringArray;
+import com.mysql.cj.xdevapi.Result;
 
-import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import javax.xml.transform.Result;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Vector;
-import java.util.Properties;
 
 
 public abstract class DataManager {
@@ -97,6 +94,34 @@ public abstract class DataManager {
 
     }
 
+    public static void refreshMovieData(DefaultTableModel model)
+    {
+        ResultSet rs = null;
+        for(int i = model.getRowCount()-1 ; i>= 0 ; i--)
+        {
+            model.removeRow(i);
+        }
+        String query = "SELECT categoryName ,movieName , theatreNo , showTimes , movieType FROM `cinema`.`tblcategory` , `cinema`.`tblmovie` WHERE\n" +
+                "`tblmovie`.`categoryID` = `tblcategory`.`categoryID`";
+        try {
+            rs = (ResultSet) executeQuery(query , true);
+            while(rs.next())
+            {
+                Vector row;
+                row = new Vector(4);
+                row.add(rs.getString("movieName"));
+                row.add(rs.getString("theatreNo"));
+                row.add(rs.getString("showTimes"));
+                row.add(rs.getString("movieType"));
+                row.add(rs.getString("categoryName"));
+                model.addRow(row);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        model.fireTableDataChanged();
+    }
+
     public static boolean addUser(String userName ,String password , String id , String userType)throws Exception
     {
         String sql = "INSERT INTO `Cinema`.`tblUsers` (`userID` , `userName` , `password` , `userType`) VALUES ('"
@@ -114,16 +139,62 @@ public abstract class DataManager {
     }
 
     public static void addMovie(Movie movie) {
-        String sql = "INSERT INTO `cinema`.`tblMovie` (`movieName`, `categoryID`, `theatreNo`, `movieType`) VALUES ('"
-                    + movie.getMovieName() + "' , '" + movie.getCategory() + "' , '" + movie.getTheatreNo()
-                    + "' , '" + movie.getMovieType() + "')";
+
+        String query = "INSERT INTO `cinema`.`tblMovie` SET movieName = '" + movie.getMovieName() + "' , categoryID = (SELECT categoryID FROM" +
+                        " `cinema`.`tblCategory` WHERE categoryName = '"+ movie.getCategoryName() + "') , theatreNo = " +  movie.getTheatreNo()
+                        + " , movieType = '" + movie.getMovieType()
+                        +"' , showTimes = ''";
+
         try
         {
-            executeQuery(sql , false);
+            executeQuery(query , false);
         }catch (Exception e)
         {
             System.out.println(e);
         }
+    }
+
+    public static void updateMovie(Movie movie)
+    {
+        String query = "UPDATE `cinema`.`tblMovie` SET `movieName` = '"+ movie.getMovieName()
+                        + "' , `categoryID` = (SELECT categoryID FROM `cinema`.`tblCategory` WHERE `categoryName` = '" + movie.getCategoryName()
+                        + "') , `theatreNo` = '" + movie.getTheatreNo()
+                        + "' , `movieType` = '" + movie.getMovieType()
+                        + "' WHERE (`movieID` = '" + movie.getMovieId() + "');";
+
+        try {
+            executeQuery(query , false);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static int getMovieId(String movieName)
+    {
+        String query = "SELECT movieId FROM `cinema`.`tblMovie` WHERE `movieName` = '" + Utils.cleanString(movieName) + "' ;";
+        System.out.println(query);
+        int result = 0;
+        try {
+            ResultSet rs = (ResultSet) executeQuery(query , true);
+            while(rs.next())
+            {
+                result = rs.getInt("movieID");
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    public static boolean deleteMovie(String movieName) throws Exception {
+
+        String sql = "DELETE FROM `cinema`.`tblMovie` WHERE (`movieName` = '" + movieName + "');";
+        boolean result = (Boolean) executeQuery(sql , false);
+        System.out.println("Deleted movie " + movieName);
+        return result;
     }
 
     public static void updateUser(User user) {
@@ -168,15 +239,23 @@ public abstract class DataManager {
         String query = "SELECT * FROM `cinema`.`tblCategory`";
         try {
             ResultSet rs = (ResultSet) executeQuery(query , true);
+            int i = 0;
             while(rs.next())
             {
                 String categoryName = rs.getString("categoryName");
                 int categoryID = rs.getInt("categoryID");
-                categories.add(new MovieCategory(categoryID , categoryName));
+                MovieCategory movieCategory = new MovieCategory(categoryID , categoryName);
+                categories.add(i , movieCategory);
+                System.out.println(categories.get(i).getCategoryName());
+                i++;
             }
 
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        for(int i = 0 ; i < categories.size() ; i++)
+        {
+            System.out.println(categories.get(i).getCategoryName() + categories.get(i).getCategoryID());
         }
         return categories;
     }

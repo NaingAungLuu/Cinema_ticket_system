@@ -1,37 +1,37 @@
 package cinema_ticket_system.GUIs.Admin;
 import cinema_ticket_system.Controllers.DataManager;
 import cinema_ticket_system.Controllers.GUI;
+import cinema_ticket_system.Controllers.MovieEditFormDelegate;
 import cinema_ticket_system.DataObjects.Movie;
 import cinema_ticket_system.DataObjects.MovieCategory;
-import cinema_ticket_system.GUIs.Login_Form;
 import cinema_ticket_system.GUIs.Sales.Sales_Tickets;
 import cinema_ticket_system.Controllers.UserInteractions;
+import cinema_ticket_system.Utils.Utils;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
-import java.util.List;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-public class Admin_Manage_Movies extends JPanel {
-	public static JFrame window = new JFrame("Admin");
+public class Admin_Manage_Movies extends JPanel implements MovieEditFormDelegate {
 	public static JButton btnLogOut = new JButton("Log Out");
-	static ButtonHandler buttons = new ButtonHandler();
+	ButtonHandler buttons = new ButtonHandler();
 	static JButton btnAddMovieArt = new JButton("+");
 	static JButton btnManageUsers = new JButton("Manage Users");
 	static JButton btnManageSeatPlan = new JButton("Manage Seat Plan");
 	static JButton btnManagemovies = new JButton("Manage Movies");
 	static JButton btnAddMovie = new JButton("Add");
 	static JButton btnEdit = new JButton("Edit");
+	JButton btnDelete = new JButton("Delete");
+	static JTextArea txtMovieName = new JTextArea("Movie Name");
+	ArrayList<MovieCategory> categories = DataManager.getCategories();
 	String strMovieName = "Aquaman";
 	String strMovieType = "2D";
 	String strTheatreNo = "1 , 2";
@@ -40,19 +40,20 @@ public class Admin_Manage_Movies extends JPanel {
 	JLabel lblMovieType = new JLabel(strMovieType);
 	JLabel lblTheatreNo  = new JLabel(strTheatreNo);
 	JLabel lblMovieTimes = new JLabel(strMovieTime);
+	static String filePath;
+	static JComboBox<String> cboTheatreNo = new JComboBox<String>();
+	static JRadioButton rdo3D = new JRadioButton("3D" , true);
+	JRadioButton rdo2D = new JRadioButton("2D" , false);
+	static JComboBox<String> cboCategory = new JComboBox<>();
 	static String showtimes = "9:00am , 11:30am , 1.30pm , 3:00pm \n , 5:00pm , 7:00pm";
 	static String data[][] = {{"Aquaman" , "1 , 2" , showtimes , "3D"} ,
 			{"How To Train Your Dragon \n (The Hidden World)" , "3" , showtimes , "2D"} ,
 			{"Oh My Ghost 6" , "4" , showtimes , "2D"} };
 	static String numbers[] = {"Movie Name" , "Theatre No." , "Show Times" , "Type"};
 	static JTable Jt = new JTable(data , numbers);
-	DefaultTableModel model ;
+	private static DefaultTableModel model ;
 
-	public static void main(String[]args)
-		{
 
-			Admin_Manage_Movies adHome = new Admin_Manage_Movies();
-		}
 		public Admin_Manage_Movies()
 		{
 			//Constructor for JLabels
@@ -66,7 +67,7 @@ public class Admin_Manage_Movies extends JPanel {
 			//Movie Table
 
 			String[][] Data = {};
-			String[] ColumnNames = {"Movie Name" , "Theatre No" , "Show Times" , "Type" };
+			String[] ColumnNames = {"Movie Name" , "Theatre No" , "Show Times" , "Type" , "Category"};
 
 //			Jt.setBounds(330 ,80 , 800 , 300);
 //			Jt.setSize(90, 400);
@@ -139,6 +140,8 @@ public class Admin_Manage_Movies extends JPanel {
 				}
 			});
 
+			DataManager.refreshMovieData(model);
+
 
 
 
@@ -190,7 +193,7 @@ public class Admin_Manage_Movies extends JPanel {
 
 			//Constructor for TextAreas
 			//Movie Name
-			JTextArea txtMovieName = new JTextArea("Movie Name");
+
 			txtMovieName.setFont(new Font("Nadeem" , Font.PLAIN , 16));
 			txtMovieName.setBounds(300 , 425 , 350 , 25);
 			txtMovieName.setAlignmentX(1);
@@ -203,7 +206,12 @@ public class Admin_Manage_Movies extends JPanel {
 			btnEdit.setContentAreaFilled(false);
 			btnEdit.setBorder(new LineBorder(Color.decode("#242B40") , 2));
 			btnEdit.setOpaque(true);
-			btnEdit.addActionListener(buttons);
+			btnEdit.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent actionEvent) {
+					showTimeDialog();
+				}
+			});
 			btnEdit.addMouseListener(new MouseAdapter() {
 				@Override
 				public void mouseEntered(MouseEvent e) {
@@ -222,13 +230,13 @@ public class Admin_Manage_Movies extends JPanel {
 			});
 
 			//Constructor for "Delete Movie Button"
-			final JButton btnDelete = new JButton("Delete");
 			btnDelete.setBounds(820 , 530 , 100 , 40);
 			btnDelete.setBackground(Color.decode("#FFB031"));
 			btnDelete.setForeground(Color.WHITE);
 			btnDelete.setContentAreaFilled(false);
 			btnDelete.setBorder(new LineBorder(Color.decode("#242B40") , 2));
 			btnDelete.setOpaque(true);
+			btnDelete.addActionListener(buttons);
 			btnDelete.addMouseListener(new MouseAdapter() {
 				@Override
 				public void mouseEntered(MouseEvent e) {
@@ -382,8 +390,7 @@ public class Admin_Manage_Movies extends JPanel {
 			//Constructor for Add Area
 			//Constructor for Radio Buttons
 			//2D and 3D
-			JRadioButton rdo3D = new JRadioButton("3D" , true);
-			JRadioButton rdo2D = new JRadioButton("2D" , false);
+
 			ButtonGroup btnGp = new ButtonGroup();
 			btnGp.add(rdo2D);
 			btnGp.add(rdo3D);
@@ -397,20 +404,21 @@ public class Admin_Manage_Movies extends JPanel {
 			rdo2D.setFont(new Font("Nadeem" , Font.PLAIN , 18));
 			//Constructor for ComboBoxes
 			//Theatre No.
-			JComboBox<String> cboTheatreNo = new JComboBox<String>();
-			cboTheatreNo.addItem("Theatre	1	,	2	");
+			cboTheatreNo.removeAllItems();
+			cboTheatreNo.addItem("Theatre 1");
+			cboTheatreNo.addItem("Theatre 2");
 			cboTheatreNo.addItem("Theatre 3");
 			cboTheatreNo.addItem("Theatre 4   ");
 			cboTheatreNo.setSelectedIndex(0);
 			cboTheatreNo.setBounds(415 , 460 , 240 , 25);
 
-			JComboBox<String> cboCategory = new JComboBox<>();
-			ArrayList<MovieCategory> categories = DataManager.getCategories();
+
+
 
 			for(int i = 0 ; i< categories.size() ; i++)
 			{
 				cboCategory.addItem(categories.get(i).getCategoryName());
-//			}
+			}
 			cboCategory.setSelectedIndex(0);
 			cboCategory.setBounds(415 , 493 , 115 , 25);
 
@@ -422,12 +430,7 @@ public class Admin_Manage_Movies extends JPanel {
 			btnAddMovie.setContentAreaFilled(false);
 			btnAddMovie.setBorder(new LineBorder(Color.decode("#242B40") , 2));
 			btnAddMovie.setOpaque(true);
-			btnAddMovie.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					Movie movie = new Movie(txtMovieName.getText() , categories.get(cboCategory.getSelectedIndex()).getCategoryID() , )
-				}
-			});
+			btnAddMovie.addActionListener(buttons);
 			btnAddMovie.addMouseListener(new MouseAdapter() {
 				@Override
 				public void mouseEntered(MouseEvent e) {
@@ -449,7 +452,7 @@ public class Admin_Manage_Movies extends JPanel {
 			//Constructor for JPanel
 
 			setLayout(null);
-			setBackground(Color.decode("#242B40"));
+			setBackground(Color.decode("#181f2e"));
 			setBounds(0 , 0 , 1200 , 700);
 			add(Admin_main);
 			add(btnReport);
@@ -478,31 +481,43 @@ public class Admin_Manage_Movies extends JPanel {
 
 		}
 
-	public static class ButtonHandler implements ActionListener{
+
+
+		public void refresh()
+		{
+			DataManager.refreshMovieData(model);
+		}
+
+	private void showTimeDialog()
+	{
+		Admin_Manage_Movies_Edit timeEditor = Admin_Manage_Movies_Edit.getObjInstance(this);
+	}
+
+	@Override
+	public void onSave(JFrame frame) {
+
+			System.out.print(lblMovieName.getText().trim());
+			Admin_Manage_Movies_Edit.setMovieId(DataManager.getMovieId(lblMovieName.getText().trim()));
+			Movie updateMovieData = Admin_Manage_Movies_Edit.getObjInstance(this).getUpdateData();
+			DataManager.updateMovie(updateMovieData);
+			DataManager.refreshMovieData(model);
+			frame.dispose();
+	}
+
+	public class ButtonHandler implements ActionListener{
 		public void actionPerformed(ActionEvent e)
 		{
-			if(e.getSource() == btnLogOut)
-			{
-				Login_Form frmLogin = new Login_Form();
-				Admin_Manage_Movies.window.dispose();
-			}
-			else if(e.getSource() == btnManageSeatPlan)
-			{
-				Admin_Manage_Seat_Plan frmManageSeatPlane = new Admin_Manage_Seat_Plan();
-				Admin_Manage_Movies.window.dispose();
-			}
-			else if(e.getSource() == btnManageUsers)
-			{
-				Admin_Manage_Movies.window.dispose();
-			}
-			else if(e.getSource() == btnAddMovieArt)
+			if(e.getSource() == btnAddMovieArt)
 			{
 				JFileChooser choosefile = new JFileChooser();
 				FileNameExtensionFilter filter = new FileNameExtensionFilter("Images" , "jpg" , "jpeg" , "png");
 				choosefile.setFileFilter(filter);
+
 				int result = choosefile.showOpenDialog(null);
 				if(result == JFileChooser.APPROVE_OPTION) {
 					File file = choosefile.getSelectedFile();
+					 filePath = choosefile.getSelectedFile().getPath();
+					System.out.println(filePath);
 					try {
 						btnAddMovieArt.setText("");
 						btnAddMovieArt.setIcon(Sales_Tickets.scaleImage(new ImageIcon(ImageIO.read(file)) , 205 , 205) );
@@ -510,7 +525,7 @@ public class Admin_Manage_Movies extends JPanel {
 					}catch(IOException err)
 					{
 						String msg = "Error while fetching file\nPlease make sure you have selected an image file";
-						JOptionPane.showMessageDialog(window , msg , "Error" , JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(getRootPane() , msg , "Error" , JOptionPane.ERROR_MESSAGE);
 					}
 				}else
 				{
@@ -519,8 +534,29 @@ public class Admin_Manage_Movies extends JPanel {
 			}
 			else if(e.getSource() == btnEdit)
 			{
-				Admin_Manage_Movies_Edit frmEdit = new Admin_Manage_Movies_Edit();
 
+			}
+			else if(e.getSource() == btnAddMovie)
+			{
+				Movie movieToAdd = new Movie(Utils.cleanString(txtMovieName.getText().trim()) , cboCategory.getSelectedItem().toString().trim());
+				movieToAdd.setMovieType(rdo3D.isSelected() ? "3D" : "2D");
+				movieToAdd.setMoviePosterPath(filePath);
+				movieToAdd.setTheatreNo(cboTheatreNo.getSelectedIndex()+1);
+				movieToAdd.setCategoryName(cboCategory.getSelectedItem().toString());
+				DataManager.addMovie(movieToAdd);
+				refresh();
+				System.out.println("Movie Added");
+			}
+			else if(e.getSource() == btnDelete)
+			{
+				try {
+					System.out.println("Deleting movie");
+					String movieToDelete = Utils.cleanString(lblMovieName.getText().trim());
+					UserInteractions.deleteMovie(movieToDelete);
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+				refresh();
 			}
 
 		}

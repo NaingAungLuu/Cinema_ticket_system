@@ -1,5 +1,7 @@
 package cinema_ticket_system.GUIs.Admin;
 import cinema_ticket_system.Controllers.UserInteractions;
+import com.github.lgooddatepicker.components.DatePicker;
+import com.github.lgooddatepicker.components.DateTimePicker;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -15,6 +17,7 @@ public class Admin_Manage_Movies_Edit_Show_Times{
     ButtonHandler buttons = new ButtonHandler();
     static String[] showtimes = {"9:00am" , "11:30am" , "1.30pm" , "3:00pm" , "5:00pm" , "7:00pm"};
     static ArrayList<JCheckBox> checkBoxes = new ArrayList<>();
+    public DateTimePicker dateTimePicker;
 
     public static void main(String[] arg)
     {
@@ -66,9 +69,15 @@ public class Admin_Manage_Movies_Edit_Show_Times{
         });
 
         //Constructor for JPanel
+        DatePicker picker = new DatePicker();
+        dateTimePicker= new DateTimePicker();
+        picker.setBounds(0 , 0 , 100 , 100);
+
         content.setLayout(null);
         content.setBackground(Color.decode("#242B40"));
         content.add(btnSave);
+        content.add(picker);
+        content.add(dateTimePicker);
 
 
         //Constructor for Edit JFrame
@@ -77,6 +86,9 @@ public class Admin_Manage_Movies_Edit_Show_Times{
         window.setLocation(450 , 300);
         window.setVisible(true);
         window.setLocationRelativeTo(null);
+
+
+
     }
 
     public void getShowTimeData()

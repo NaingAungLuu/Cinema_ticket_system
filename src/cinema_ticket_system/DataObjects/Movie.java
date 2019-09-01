@@ -4,23 +4,44 @@ public class Movie extends DataObject{
     private static int movieId;
     private static String movieName;
     private static int categoryID;
+    private static String categoryName;
     private static int theatreNo;
     private static String movieType;
     private static String showTime;
+    private static String moviePosterPath;
 
-    public Movie(String movieName , int category , int theatreNo, String movieType,String showTime)
+    public static String getCategoryName() {
+        return Movie.categoryName;
+    }
+
+    public static void setCategoryName(final String categoryName) {
+        Movie.categoryName = categoryName;
+    }
+
+
+
+
+    public Movie(String movieName , String categoryName , int theatreNo, String movieType, String showTime)
     {
         this.movieName = movieName;
-        this.categoryID = category;
+        this.categoryName = categoryName;
         this.theatreNo = theatreNo;
         this.movieType = movieType;
         this.showTime = showTime;
     }
 
-    public Movie(String movieName , int categoryID)
+    public Movie(String movieName , String category)
     {
         this.movieName = movieName;
         this.categoryID = categoryID;
+    }
+
+    public static int getMovieId() {
+        return movieId;
+    }
+
+    public static void setMovieId(int movieId) {
+        Movie.movieId = movieId;
     }
 
     public String getMovieName() {
@@ -61,5 +82,13 @@ public class Movie extends DataObject{
 
     public void setShowTime(String showTime) {
         this.showTime = showTime;
+    }
+
+    public static String getMoviePosterPath() {
+        return Movie.moviePosterPath;
+    }
+
+    public static void setMoviePosterPath(final String moviePosterPath) {
+        Movie.moviePosterPath = moviePosterPath;
     }
 }

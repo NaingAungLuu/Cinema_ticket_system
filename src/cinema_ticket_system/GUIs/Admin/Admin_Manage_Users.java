@@ -319,7 +319,7 @@ public class Admin_Manage_Users extends JPanel{
 
 
         setLayout(null);
-        setBackground(Color.decode("#242B40"));
+        setBackground(Color.decode("#181f2e"));
         setBounds(0 , 0 , 1200 , 700);
         setFocusable(true);
         add(Admin_main);

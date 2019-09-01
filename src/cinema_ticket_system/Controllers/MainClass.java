@@ -5,7 +5,6 @@ import java.awt.*;
 import javax.swing.*;
 import java.sql.Connection;
 import cinema_ticket_system.Controllers.*;
-import cinema_ticket_system.*;
 
 public class MainClass {
 
