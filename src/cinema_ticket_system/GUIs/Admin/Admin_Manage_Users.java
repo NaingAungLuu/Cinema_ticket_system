@@ -20,13 +20,7 @@ import cinema_ticket_system.GUIs.Login_Form;
 public class Admin_Manage_Users extends JPanel{
 
     public static JFrame window = new JFrame("Admin");
-    public static JButton btnLogOut = new JButton("Log Out");
-    public static JButton btnManagemovies = new JButton("Manage Movies");
-    public static JButton btnReport = new JButton("Report");
-    public static JButton btnManageSeatPlan = new JButton("Manage Seat Plan");
-    public static JButton btnManageUsers = new JButton("Manage Users");
     public static JButton btnAdd = new JButton("Add");
-    public ButtonHandler buttons = new ButtonHandler();
     public static JButton btnEdit = new JButton("Edit");
     public static JButton btnDelete = new JButton("Delete");
     JTable tblData;
@@ -323,13 +317,8 @@ public class Admin_Manage_Users extends JPanel{
         setBounds(0 , 0 , 1200 , 700);
         setFocusable(true);
         add(Admin_main);
-        add(btnManagemovies);
-        add(btnManageSeatPlan);
-        add(btnManageUsers);
-        add(btnReport);
         add(lblCinemaname1);
         add(lblCinemaname);
-        add(btnLogOut);
         add(Users_in_database);
         add(scrollPane);
         add(txtUsername);
@@ -389,56 +378,4 @@ public class Admin_Manage_Users extends JPanel{
            return text;
         }
     }
-
-    public class ButtonHandler implements ActionListener{
-        public void actionPerformed(ActionEvent e)
-        {
-            if(e.getSource() == btnLogOut)
-            {
-                Login_Form frmLogin = new Login_Form();
-                Admin_Manage_Users.window.dispose();
-            }
-            else if(e.getSource() == btnManagemovies)
-            {
-                Admin_Manage_Movies frmManageMovies = new Admin_Manage_Movies();
-                Admin_Manage_Users.window.dispose();
-            }
-            else if(e.getSource() == btnManageSeatPlan)
-            {
-                Admin_Manage_Seat_Plan frmManageSeatPlane = new Admin_Manage_Seat_Plan();
-                Admin_Manage_Users.window.dispose();
-            }
-            else if(e.getSource() == btnAdd)
-            {
-                String username = txtUsername.getTextData();
-                String password = txtPassword.getTextData();
-                String id = txtID.getTextData();
-
-
-                model.fireTableDataChanged();
-
-
-            }
-            else if(e.getSource() == btnDelete)
-            {
-                int idToDelete = Integer.parseInt((String) model.getValueAt(tblData.getSelectedRow(), 1));
-                String sql = "DELETE FROM `Cinema`.`tblUsers` WHERE (`userID` = '" +  idToDelete + "');";
-                System.out.println("You are about to delete user " + idToDelete);
-                try {
-                    Connection conn = DataManager.getConnection();
-                    Statement stm = conn.createStatement();
-                    stm.execute(sql);
-                } catch (Exception err){
-                    System.out.println(err);
-                }
-            }
-            else if(e.getSource() == btnEdit)
-            {
-
-            }
-        }
-
-    }
-
-
 }

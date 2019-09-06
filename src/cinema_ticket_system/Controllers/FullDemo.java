@@ -219,6 +219,7 @@ public class FullDemo {
         panel.addLabel(panel.panel1, 1, (row++ * rowMultiplier), "Date " + (++pickerNumber)
                 + ", Change Calendar Size:");
 
+
         // Create a date picker: Show Week Numbers.
         // This will display week numbers on the left side of the calendar.
         // By default, the week number rules are specific to the locale of the settings instance.

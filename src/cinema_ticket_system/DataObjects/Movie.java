@@ -30,11 +30,31 @@ public class Movie extends DataObject{
         this.showTime = showTime;
     }
 
+    public Movie(){}
+
     public Movie(String movieName , String category)
     {
         this.movieName = movieName;
         this.categoryID = categoryID;
     }
+
+    public boolean isDataConsistent(Movie movie)
+    {
+        if(movie.getMovieName()!= null
+                && movie.getMovieType() != null
+                && movie.getShowTime() != null
+                && movie.getTheatreNo() != 0
+                && movie.getCategoryName() != null)
+        {
+            return true;
+        }
+        else
+        {
+            System.out.println("daata is inconsistent");
+            return false;
+        }
+    }
+
 
     public static int getMovieId() {
         return movieId;

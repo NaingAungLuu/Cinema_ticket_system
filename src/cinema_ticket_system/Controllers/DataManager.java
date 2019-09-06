@@ -140,10 +140,13 @@ public abstract class DataManager {
 
     public static void addMovie(Movie movie) {
 
-        String query = "INSERT INTO `cinema`.`tblMovie` SET movieName = '" + movie.getMovieName() + "' , categoryID = (SELECT categoryID FROM" +
-                        " `cinema`.`tblCategory` WHERE categoryName = '"+ movie.getCategoryName() + "') , theatreNo = " +  movie.getTheatreNo()
+        String query = "INSERT INTO `cinema`.`tblMovie` SET movieName = '" + movie.getMovieName()
+                        + "' , categoryID = (SELECT categoryID FROM" +
+                        " `cinema`.`tblCategory` WHERE categoryName = '"+ movie.getCategoryName()
+                        + "') , theatreNo = " +  movie.getTheatreNo()
                         + " , movieType = '" + movie.getMovieType()
-                        +"' , showTimes = ''";
+                        +"' , showTimes = '"
+                        + movie.getShowTime() + "'";
 
         try
         {
@@ -160,6 +163,7 @@ public abstract class DataManager {
                         + "' , `categoryID` = (SELECT categoryID FROM `cinema`.`tblCategory` WHERE `categoryName` = '" + movie.getCategoryName()
                         + "') , `theatreNo` = '" + movie.getTheatreNo()
                         + "' , `movieType` = '" + movie.getMovieType()
+                        + "' , `showTimes` = '" + movie.getShowTime()
                         + "' WHERE (`movieID` = '" + movie.getMovieId() + "');";
 
         try {

@@ -1,11 +1,12 @@
 package cinema_ticket_system.GUIs.Admin;
+import cinema_ticket_system.Controllers.MovieShowTimeDelegate;
 import cinema_ticket_system.Controllers.UserInteractions;
-import com.github.lgooddatepicker.components.DatePicker;
 import com.github.lgooddatepicker.components.DateTimePicker;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
+import java.util.Date;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 
@@ -19,12 +20,26 @@ public class Admin_Manage_Movies_Edit_Show_Times{
     static ArrayList<JCheckBox> checkBoxes = new ArrayList<>();
     public DateTimePicker dateTimePicker;
 
+    private static Admin_Manage_Movies_Edit_Show_Times objInstance;
+
     public static void main(String[] arg)
     {
-        Admin_Manage_Movies_Edit_Show_Times frmshowtimes = new Admin_Manage_Movies_Edit_Show_Times(showtimes);
+        Admin_Manage_Movies_Edit_Show_Times frmshowtimes = new Admin_Manage_Movies_Edit_Show_Times(null);
     }
 
-    Admin_Manage_Movies_Edit_Show_Times(String[] showTimes)
+    public static Admin_Manage_Movies_Edit_Show_Times getObjInstance(MovieShowTimeDelegate delegate)
+    {
+        if(objInstance == null)
+        {
+            objInstance = new Admin_Manage_Movies_Edit_Show_Times(delegate);
+        }
+        objInstance.window.setVisible(true);
+        return objInstance;
+
+    }
+
+
+    private Admin_Manage_Movies_Edit_Show_Times(MovieShowTimeDelegate delegate)
     {
         //Constructor for JCheckBoxes
 
@@ -50,7 +65,12 @@ public class Admin_Manage_Movies_Edit_Show_Times{
         btnSave.setContentAreaFilled(false);
         btnSave.setBorder(new LineBorder(Color.decode("#242B40") , 2));
         btnSave.setOpaque(true);
-        btnSave.addActionListener(buttons);
+        btnSave.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                delegate.onTapSave(window);
+            }
+        });
         btnSave.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
@@ -68,16 +88,10 @@ public class Admin_Manage_Movies_Edit_Show_Times{
             }
         });
 
-        //Constructor for JPanel
-        DatePicker picker = new DatePicker();
-        dateTimePicker= new DateTimePicker();
-        picker.setBounds(0 , 0 , 100 , 100);
 
         content.setLayout(null);
         content.setBackground(Color.decode("#242B40"));
         content.add(btnSave);
-        content.add(picker);
-        content.add(dateTimePicker);
 
 
         //Constructor for Edit JFrame
@@ -91,10 +105,17 @@ public class Admin_Manage_Movies_Edit_Show_Times{
 
     }
 
-    public void getShowTimeData()
+    public String getShowTimeData()
     {
-
+        String showTimeData = "";
+        for(int i = 0 ; i<checkBoxes.size() ; i++)
+        {
+            showTimeData += (checkBoxes.get(i).isSelected()) ? showtimes[i]+"," : "";
+            System.out.println(showTimeData);
+        }
+        return showTimeData;
     }
+
 
     public static class ButtonHandler implements ActionListener{
         public void actionPerformed(ActionEvent e)

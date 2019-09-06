@@ -25,6 +25,7 @@ public class GUI{
     public static final int SALES_SEATS = 8;
     public static final int ADMIN_MANAGE_MOVIES_FRAGMENT = 9;
     public static final int EDIT_USER_INFO = 10;
+    public static final int ADMIN_REPORT = 11;
 
     static Dimension login_dim = new Dimension(500 , 400);
     static Dimension default_dim = new Dimension(1200 , 700);
@@ -129,6 +130,11 @@ public class GUI{
                                     pnlFrag.add(pnlframe);
                                     break;
 
+            case ADMIN_REPORT:
+                                pnlframe = new Admin_Report();
+                                pnlFrag.add(pnlframe);
+                                break;
+
             //Sales Panels
             case SALES_TICKETS :
                                 pnlframe = new  Sales_Tickets();
@@ -142,6 +148,7 @@ public class GUI{
                                  */
                                 pnlframe = new Sales_Seats( Integer.parseInt(extra[0].toString()) , (Boolean) extra[1]);
                                 pnlFrag.add(pnlframe);break;
+
 
 
              //Default Panel

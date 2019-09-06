@@ -1,16 +1,15 @@
 package cinema_ticket_system.GUIs.Admin;
 import cinema_ticket_system.Controllers.MovieEditFormDelegate;
+import cinema_ticket_system.Controllers.MovieShowTimeDelegate;
 import cinema_ticket_system.DataObjects.Movie;
 import cinema_ticket_system.Utils.Utils;
-import org.jetbrains.annotations.Nullable;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 
-public class Admin_Manage_Movies_Edit {
-    ButtonHandler buttons = new ButtonHandler();
+public class Admin_Manage_Movies_Edit implements MovieShowTimeDelegate {
     public static JFrame window = new JFrame();
     String showtimes[] = {"9:00am" , "11:30am" , "1.30pm" , "3:00pm" , "5:00pm" , "7:00pm"};
     static JButton btnShowTime = new JButton("Show Times");
@@ -26,6 +25,8 @@ public class Admin_Manage_Movies_Edit {
     ButtonGroup btnGp = new ButtonGroup();
     public static int movieId = 0;
 
+    private static Movie updateMovieData = new Movie();
+    private Admin_Manage_Movies_Edit_Show_Times mShowTimeDialog;
     private MovieEditFormDelegate mDelegate;
 
     public static Admin_Manage_Movies_Edit getObjInstance(MovieEditFormDelegate mDelegate)
@@ -34,6 +35,7 @@ public class Admin_Manage_Movies_Edit {
         {
             objInstance = new Admin_Manage_Movies_Edit(mDelegate);
         }
+        objInstance.window.setVisible(true);
         return objInstance;
     }
 
@@ -44,12 +46,13 @@ public class Admin_Manage_Movies_Edit {
 
     public static Movie getUpdateData()
     {
-        Movie movie = new Movie(Utils.cleanString(txtMovieName.getText()) , "Action" );
-        movie.setTheatreNo(cboTheatreNo.getSelectedIndex()+1);
-        movie.setMovieType(rdo3d.isSelected() ? "3D" : "2D");
-        movie.setMovieId(movieId);
-        movie.setCategoryName("Action");
-        return  movie;
+        updateMovieData.setMovieName(Utils.cleanString(txtMovieName.getText()));
+        updateMovieData.setCategoryName("Action");
+        updateMovieData.setTheatreNo(cboTheatreNo.getSelectedIndex()+1);
+        updateMovieData.setMovieType(rdo3d.isSelected() ? "3D" : "2D");
+        updateMovieData.setMovieId(movieId);
+        updateMovieData.setCategoryName("Action");
+        return  updateMovieData;
     }
 
     private Admin_Manage_Movies_Edit(MovieEditFormDelegate delegate)
@@ -67,7 +70,12 @@ public class Admin_Manage_Movies_Edit {
         btnShowTime.setBounds(38 , 90 , 200 , 40);
         btnShowTime.setOpaque(true);
         btnShowTime.setBorder(new LineBorder(Color.decode("#D5D3D3") , 2));
-        btnShowTime.addActionListener(buttons);
+        btnShowTime.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(final ActionEvent actionEvent) {
+                getShowTimesDialog();
+            }
+        });
 
 
         btnSave.setBounds(255 , 125 , 135 , 40);
@@ -134,18 +142,15 @@ public class Admin_Manage_Movies_Edit {
         window.setLocationRelativeTo(null);
 
     }
+    private void getShowTimesDialog()
+    {
+        mShowTimeDialog = Admin_Manage_Movies_Edit_Show_Times.getObjInstance(this);
+    }
 
-    public static class ButtonHandler implements ActionListener{
-        public void actionPerformed(ActionEvent e)
-        {
-            if(e.getSource() == btnShowTime)
-            {
-                window.setEnabled(false);
-                String[] showData = {};
-                Admin_Manage_Movies_Edit_Show_Times frmshow = new Admin_Manage_Movies_Edit_Show_Times(showData);
-                frmshow.window.setAlwaysOnTop(true);
-            }
-        }
+    @Override
+    public void onTapSave(JFrame frame) {
+        updateMovieData.setShowTime(mShowTimeDialog.getShowTimeData());
+        frame.dispose();
     }
 
 }

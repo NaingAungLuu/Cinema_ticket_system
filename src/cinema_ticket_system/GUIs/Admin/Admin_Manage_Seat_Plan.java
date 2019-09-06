@@ -17,7 +17,6 @@ public class Admin_Manage_Seat_Plan extends JPanel{
 		public static JTextArea txtClassB = new JTextArea("5500");
 		public static JTextArea txtClassC = new JTextArea("4500");
 		public static JTextArea txtCoupleSeat = new JTextArea("12000");
-		public static ButtonHandler buttons = new ButtonHandler();
 			public static void main(String[]args)
 			{
 				Admin_Manage_Seat_Plan frmAdminManageSeatPlan = new Admin_Manage_Seat_Plan();
@@ -149,25 +148,4 @@ public class Admin_Manage_Seat_Plan extends JPanel{
 				add(btnSave);
 				//Constructor for JFrame
 			}
-
-	public static class ButtonHandler implements ActionListener{
-		public void actionPerformed(ActionEvent e)
-		{
-			if(e.getSource() == btnLogOut)
-			{
-				Login_Form frmLogin = new Login_Form();
-				Admin_Manage_Seat_Plan.window.dispose();
-			}
-			else if(e.getSource() == btnManagemovies)
-			{
-				Admin_Manage_Movies frmManageMovies = new Admin_Manage_Movies();
-				Admin_Manage_Seat_Plan.window.dispose();
-			}
-			else if(e.getSource() == btnManageUsers)
-			{
-				Admin_Manage_Seat_Plan.window.dispose();
-			}
-		}
-
-	}
 }
